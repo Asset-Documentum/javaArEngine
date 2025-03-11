@@ -20,7 +20,7 @@ Follow these steps to build the JAR file:
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/Asset-Documentum/javaArEngine-.git
+git clone https://github.com/Asset-Documentum/javaArEngine.git
 cd javaArEngine-
 ```
 ## 2. Ensure Maven is Installed
