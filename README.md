@@ -20,8 +20,10 @@ Follow these steps to build the JAR file:
 
 ### 1. Clone the Repository
 ```sh
+
 git clone https://github.com/Asset-Documentum/javaArEngine.git
-cd javaArEngine-
+
+cd javaArEngine
 ```
 ## 2. Ensure Maven is Installed
 Check if Maven is installed:
@@ -38,12 +40,21 @@ Run the following command to build the project:
 
 mvn clean package
 ```
-```sh
-mvn install package
-```
 After the build is complete, you will find the JAR file inside the target folder.
-
-## 4. Import the JAR in Your Project
+## 2. Rgester the dll
+Before registering the DLL, ensure that the SDK is installed. The default installation path is:
+C:\Program Files (x86)\Sakhr\Automatic Reader\SDK11.2
+## Steps to Register the DLL
+2.1. Open the Command Prompt as Administrator.  
+2.2. Navigate to the DLL folder:
+ ```sh
+   cd "C:\Program Files (x86)\Sakhr\Automatic Reader\SDK11.2"
+ ```
+2.3.  Run the following command to register the DLL
+```sh
+regsvr32 ar_sdkcom.dll
+```
+## 5. Import the JAR in Your Project
 To use the JAR file in another Java project, add it to your classpath or include it as a dependency in your project.
 
 Usage
